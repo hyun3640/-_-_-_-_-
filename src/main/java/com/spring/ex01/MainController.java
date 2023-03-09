@@ -20,6 +20,12 @@ public class MainController {
 		return mav;
 	}
 	
-	
+	@RequestMapping(value="/bbbb.do", method = RequestMethod.GET)
+	public ModelAndView main2(HttpServletRequest request, HttpServletResponse response)  throws Exception{
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("mk","2page ");
+		mav.setViewName("bbb22");
+		return mav;
+	}
 	
 }
