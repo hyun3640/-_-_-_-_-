@@ -27,6 +27,7 @@ public class MemberControllerImpl extends MultiActionController implements Membe
 	@Autowired
 	private MemberVO memberVO;
 	
+	/* 생성자, 필드, 셋터 메서드, 메서드 설정에 의존성 주입함 */
 	public void setMemberService(MemberServiceImpl memberService) {
 		this.memberService = memberService;
 	}
